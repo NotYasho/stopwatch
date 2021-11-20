@@ -88,7 +88,3 @@ function makeRed(element) {
 	element.style.color = 'white';
 	element.style.opacity = '80%';
 }
-
-
-
-/* CUSTOM SCROLLBAR */
