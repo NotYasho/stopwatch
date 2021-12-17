@@ -1,4 +1,6 @@
 # Stopwatch
 
- #### Readme Auto Generated
+#### Readme Auto Generated
 ---
+
+A minimal, responsive stopwatch website.
