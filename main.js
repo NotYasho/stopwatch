@@ -88,8 +88,3 @@ function makeRed(element) {
 	element.style.color = 'white';
 	element.style.opacity = '80%';
 }
-<<<<<<< HEAD
-
-/* CUSTOM SCROLLBAR */
-=======
->>>>>>> f45469975955a5f2953f05508e8ac2de67b284fc
