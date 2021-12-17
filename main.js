@@ -26,33 +26,33 @@ function timer() {
 }
 
 function startTimer() {
-    if (!interval) {
-        if (firstTime) {
-            interval = setInterval(timer, 1000);
-		    console.log('Stopwatch Started');
-            makeGreen(startBtn);   
-        }
-        else {
-            interval = setInterval(timer, 1000);
-		    console.log('Stopwatch Resumed');
-            makeGreen(startBtn);   
-        }
+	if (!interval) {
+		if (firstTime) {
+			interval = setInterval(timer, 1000);
+			console.log('Stopwatch Started');
+			makeGreen(startBtn);
+		}
+		else {
+			interval = setInterval(timer, 1000);
+			console.log('Stopwatch Resumed');
+			makeGreen(startBtn);
+		}
 	}
-    else {
-        if (firstTime) {
-            console.log('Stopwatch Paused');
-            clearInterval(interval);
-            interval = null;
-            makeRed(startBtn);
-        }
-        else {
-            console.log('Stopwatch Paused');
-            clearInterval(interval);
-            interval = null;
-            makeBlue(startBtn);
-        }
-    }
-    firstTime = false;
+	else {
+		if (firstTime) {
+			console.log('Stopwatch Paused');
+			clearInterval(interval);
+			interval = null;
+			makeRed(startBtn);
+		}
+		else {
+			console.log('Stopwatch Paused');
+			clearInterval(interval);
+			interval = null;
+			makeBlue(startBtn);
+		}
+	}
+	firstTime = false;
 }
 
 function resetTimer() {
@@ -60,9 +60,9 @@ function resetTimer() {
 	clearInterval(interval);
 	interval = null;
 	seconds = 0;
-    time.innerHTML = '00:00:00';
-    firstTime = true;
-    makeRed(startBtn)
+	time.innerHTML = '00:00:00';
+	firstTime = true;
+	makeRed(startBtn);
 }
 
 function makeGreen(element) {
@@ -88,7 +88,5 @@ function makeRed(element) {
 	element.style.color = 'white';
 	element.style.opacity = '80%';
 }
-
-
 
 /* CUSTOM SCROLLBAR */

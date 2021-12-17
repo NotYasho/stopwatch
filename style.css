@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400&display=swap');
 :root {
 	--primary: rgb(255, 1, 56);
 	--secondary: #a4fc00;
-	--dark: #1A1C2B;
-	--darker: #131520;
+	--dark: #151622;
+	--darker: #0F111A;
 	--light: #f3f4f6;
 }
 
@@ -25,15 +25,20 @@ body {
 	margin: 12rem auto;
 	padding: 1rem 5rem;
 	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+	transition:  0.5s;
+}
+
+.watch:hover{
+	box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .time {
 	font-family: 'Bebas Neue', cursive;
-	letter-spacing: 5px;
+	letter-spacing: 6px;
 	font-size: 5rem;
 	font-weight: 300;
 	margin-bottom: 1rem;
-
 }
 
 .controls {
@@ -57,7 +62,7 @@ body {
 	padding: 0.5rem 1rem;
 	opacity: 80%;
 
-	transition: 0.4s;
+	transition: 0.4s all ease-in-out;
 }
 
 button:hover{
@@ -65,6 +70,10 @@ button:hover{
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.075);
 }
 
+/* enlarge the button when clicked */
+.controls button:active {
+	transform: scale(1.1);
+}
 
 body::-webkit-scrollbar {
 	width: 0.25rem;
