@@ -4,4 +4,4 @@
 ---
 
 A minimal, responsive stopwatch website.
-Visit the site on [Github Pages](https://yasho022.github.io/stopwatch/)
+Visit the site on [Github Pages](https://notyasho.github.io/stopwatch/)
